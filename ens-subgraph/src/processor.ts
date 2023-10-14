@@ -8,7 +8,7 @@ import {
     Transaction as _Transaction,
 } from '@subsquid/evm-processor';
 
-import * as Gravatar from './abi/Gravity'
+import * as Subgraph from './abi/Gravity'
 export const processor = new EvmBatchProcessor()
     .setDataSource({
         // Change the Archive endpoints for run the squid
@@ -33,8 +33,8 @@ export const processor = new EvmBatchProcessor()
         from: 6_000_000,
     })
     .addLog({
-        address:["0x2E645469f354BB4F5c8a05B3b30A929361cf77eC"],
-        topic0:[Gravatar.events.NewGravatar.topic,Gravatar.events.UpdatedGravatar.topic,
+        address:["0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"],
+        topic0:[Subgraph.events.NewSubgraph.topic,Subgraph.events.UpdatedSubgraph.topic,
         ],
     })
 

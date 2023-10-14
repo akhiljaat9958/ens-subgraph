@@ -1,8 +1,8 @@
 import {Entity as Entity_, Column as Column_, PrimaryColumn as PrimaryColumn_} from "typeorm"
 
 @Entity_()
-export class Gravatar {
-    constructor(props?: Partial<Gravatar>) {
+export class Subgraph {
+    constructor(props?: Partial<Subgraph>) {
         Object.assign(this, props)
     }
 
